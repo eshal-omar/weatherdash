@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="OIP.jpeg" alt="Weather App" class="imagesmall">
+      <a href="index.html">
+      <button class="sidebar-btn">Dashboard</button></a>
+      <a href="table.html">
+      <button class="sidebar-btn">Tables</button></a>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <input type="text" id="cityInput" class="search-bar" placeholder="Search for a city...">
+        <button id="getWeatherBtn">Search</button>
+        <div class="user-profile">
+          <img src="profilepic.jpeg" alt="User Profile">
+        </div>
+      </div>
+
+      <div id="weatherWidget">
+        <h2 id="cityName">City Name</h2>
+        <p id="weatherDescription">Weather Description</p>
+        <p>
+          Temperature: <span id="tempValue"></span>° <span id="tempUnit">C</span>
+          <button id="toggleTempUnit">Switch to °F</button> 
+        </p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind Speed: <span id="windSpeed"></span> m/s</p>
+      </div>
+
+      <div class="charts-container">
+        <div class="chart-box">
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="doughnutChart"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
