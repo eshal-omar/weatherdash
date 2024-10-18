@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5-Day Weather Forecast</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="OIP.jpeg" alt="Weather App" class="imagesmall">
+      <a href="index.html">
+      <button class="sidebar-btn">Dashboard</button></a>
+      <a href="table.html">
+      <button class="sidebar-btn">Tables</button></a>
+    </aside>
+
+  
+    <main class="main-content">
+      <div class="header">
+        <input type="text" id="cityInput" class="search-bar" placeholder="Enter City Name">
+        <button id="getWeatherBtn">Get Weather</button>
+        <div class="user-profile">
+          <img src="profilepic.jpeg" alt="User Profile">
+        </div>
+      </div>
+
+      
+      <div id="weatherWidget">
+        <h2>5-Day Weather Forecast</h2>
+        <table id="weatherTable">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Temperature (°C)</th>
+              <th>Humidity (%)</th>
+              <th>Windspeed (m/s)</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <div class="table-controls">
+          <button id="sortAscBtn">Sort Temperatures Ascending</button>
+          <button id="sortDescBtn">Sort Temperatures Descending</button>
+          <button id="filterRainBtn">Show Only Rainy Days</button>
+          <button id="highestTempBtn">Show Highest Temperature</button>
+        </div>
+
+        <div class="pagination">
+          <button id="prevPage">Previous</button>
+          <span id="pageInfo">Page 1 of 5</span>
+          <button id="nextPage">Next</button>
+        </div>
+
+   
+        <div id="chatbotContainer">
+            <div id="chatbox">
+            </div>
+            <input type="text" id="chatInput" placeholder="Ask something..." />
+            <button id="sendChat">Send</button>
+          </div>
+          
+      </div>
+    </main>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
