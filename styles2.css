@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  
+  .sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .imagesmall {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-btn {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .sidebar-btn:hover {
+    background-color: #555;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+ 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+  
+  
+  #weatherWidget {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #weatherTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #weatherTable th, #weatherTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  #weatherTable th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .pagination button {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+  }
+  
+  
+  
+  #chatbox {
+    width: 100%;
+    height: 200px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto; 
+  }
+  
+  #chatInput {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  #sendChat {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 10px;
+    }
+  
+    .table-controls {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
